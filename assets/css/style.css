@@ -357,17 +357,10 @@ h2 {
   background: linear-gradient(180deg, rgba(19, 41, 86, 0.5), rgba(9, 21, 47, 0.84));
 }
 
-.project-shot {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-bottom: 1px solid rgba(145, 187, 255, 0.23);
-}
-
 .project-body {
   display: grid;
   gap: 0.68rem;
-  padding: 0.86rem;
+  padding: 1rem;
 }
 
 .project-title {
@@ -434,12 +427,17 @@ h2 {
 }
 
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -477,10 +475,15 @@ h2 {
     animation: none;
   }
 
-  .reveal,
+  .js .reveal,
   .btn,
   .link-card {
     transition: none;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

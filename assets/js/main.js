@@ -5,7 +5,9 @@ if (year) {
 
 const revealItems = document.querySelectorAll(".reveal");
 if (revealItems.length > 0) {
-  if (!("IntersectionObserver" in window)) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   } else {
     revealItems.forEach((item, index) => {

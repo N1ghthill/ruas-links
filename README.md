@@ -36,4 +36,4 @@ Abra `http://localhost:8080`.
 
 A página foi montada com base em:
 - Site profissional: `https://ruas.dev.br`
-- Repositórios: `N1ghthill/nexo` e `N1ghthill/botassist-whatsapp`
+- Repositórios e canais oficiais: `N1ghthill/botassist-whatsapp` e perfil `N1ghthill`
