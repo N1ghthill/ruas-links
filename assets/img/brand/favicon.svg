@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ruas.dev">
+  <rect width="64" height="64" rx="12" fill="#10141c"/>
+  <path d="M16 48V16h18.5c7.5 0 12.5 4.2 12.5 11 0 4.9-2.6 8.5-7 10.1L49 48H37.8l-7.5-9.8H26V48H16Zm10-18.2h7.7c2.2 0 3.5-1.1 3.5-3s-1.3-3-3.5-3H26v6Z" fill="#f6f8fb"/>
+  <path d="M12 14h13l-6.5 8.4H12V14Zm0 36h13l-6.5-8.4H12V50Z" fill="#3aa8ff"/>
+  <path d="M45.5 17.5h6v6h-6v-6Zm4 14h6v6h-6v-6Z" fill="#73f2c7"/>
+</svg>
