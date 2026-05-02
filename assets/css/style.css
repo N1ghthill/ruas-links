@@ -275,6 +275,12 @@ h1 {
   stroke-width: 1.9;
 }
 
+.link-icon img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
 .link-card-primary .link-icon {
   border-color: rgba(115, 242, 199, 0.42);
   background: rgba(115, 242, 199, 0.1);
