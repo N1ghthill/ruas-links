@@ -28,7 +28,7 @@ Abra `http://localhost:8080`.
 ## Atualizações rápidas
 
 - Texto principal: `index.html`
-- Lista de links: `index.html` (bloco `.link-stack`)
+- Lista de links: `index.html` (bloco `.primary-links`)
 - Cores/tipografia/efeitos: `assets/css/style.css`
 - Microinterações: `assets/js/main.js`
 

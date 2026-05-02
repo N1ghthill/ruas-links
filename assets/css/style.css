@@ -104,32 +104,27 @@ a {
   display: inline-flex;
   align-items: center;
   min-width: 0;
-  gap: 10px;
   color: var(--text);
   font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.brand-mark,
 .profile-mark {
-  display: grid;
-  place-items: center;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   background:
     linear-gradient(135deg, rgba(58, 168, 255, 0.2), rgba(115, 242, 199, 0.12)),
     #121722;
   color: var(--text);
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-weight: 800;
   box-shadow: var(--shadow);
 }
 
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  font-size: 1.08rem;
+.brand-logo {
+  width: min(48vw, 176px);
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
 }
 
 .topbar-cta,
@@ -172,10 +167,10 @@ a {
 
 .profile-mark {
   flex: 0 0 auto;
-  width: 76px;
-  height: 76px;
-  font-size: 1.18rem;
-  letter-spacing: 0.04em;
+  width: 84px;
+  height: 84px;
+  padding: 4px;
+  object-fit: contain;
 }
 
 h1,
@@ -331,8 +326,8 @@ h1 {
 }
 
 h2 {
-  max-width: 12ch;
-  font-size: clamp(1.9rem, 9vw, 3.8rem);
+  max-width: 15ch;
+  font-size: clamp(1.9rem, 8vw, 3.3rem);
   line-height: 0.98;
 }
 
@@ -372,7 +367,8 @@ h2 {
   grid-row: 1 / span 2;
   width: 56px;
   height: 56px;
-  object-fit: cover;
+  padding: 5px;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.06);
@@ -485,9 +481,9 @@ h2 {
     min-height: 66px;
   }
 
-  .brand-mark {
-    width: 48px;
-    height: 48px;
+  .brand-logo {
+    width: 188px;
+    max-height: 62px;
   }
 
   .hero {
@@ -511,8 +507,8 @@ h2 {
   }
 
   .profile-mark {
-    width: 88px;
-    height: 88px;
+    width: 96px;
+    height: 96px;
   }
 
   .lead {
@@ -530,8 +526,12 @@ h2 {
   }
 
   .section-heading {
-    grid-template-columns: 0.72fr 1.28fr;
-    align-items: end;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  h2 {
+    max-width: 680px;
   }
 
   .project-grid {
@@ -555,13 +555,14 @@ h2 {
 
 @media (min-width: 980px) {
   h1 {
-    font-size: 4.6rem;
+    font-size: 4.35rem;
   }
 
   .hero {
-    grid-template-columns: minmax(0, 0.86fr) minmax(420px, 0.72fr);
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 0.86fr);
     min-height: 560px;
     align-content: center;
+    column-gap: 42px;
   }
 
   .link-card {
@@ -587,8 +588,8 @@ h2 {
   }
 
   .profile-mark {
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
   }
 
   h1 {
