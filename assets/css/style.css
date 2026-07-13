@@ -242,6 +242,14 @@ h1 {
     var(--surface);
 }
 
+.link-card-project {
+  min-height: 92px;
+  border-color: rgba(31, 102, 255, 0.46);
+  background:
+    linear-gradient(120deg, rgba(31, 102, 255, 0.14), rgba(14, 167, 90, 0.1)),
+    var(--surface);
+}
+
 .link-copy,
 .project-body {
   display: grid;
@@ -296,6 +304,11 @@ h1 {
   background: rgba(14, 167, 90, 0.08);
 }
 
+.link-card-project .link-icon {
+  border-color: rgba(31, 102, 255, 0.3);
+  background: rgba(31, 102, 255, 0.1);
+}
+
 .link-card em {
   display: grid;
   place-items: center;
@@ -312,7 +325,7 @@ h1 {
 
 .secondary-links {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -556,8 +569,12 @@ h2 {
     font-size: 1.12rem;
   }
 
+  .secondary-links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .proof-strip {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 0;
   }
 
